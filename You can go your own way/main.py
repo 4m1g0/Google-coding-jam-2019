@@ -17,7 +17,13 @@ def solve(t):
             if OD > 0:
                 OP += 'S'
                 OD -= 1
-            else:
+            elif OD < 0:
+                OP += 'E'
+                OD += 1
+            elif LD > 0:
+                OP += 'S'
+                OD -= 1
+            else: # LD < 0:
                 OP += 'E'
                 OD += 1
         
